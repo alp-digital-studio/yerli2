@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .headerimg {
+        width: 160px;
+    }
+
+    .headerul {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 60px;
+        list-style: none;
+    }
+
+    .headera {
+        list-style: none;
+        text-decoration: none;
+        font-size: 19px;
+        color: black;
+        cursor: pointer;
+    }
+
+    .headerbutton {
+        text-decoration: none;
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: black;
+        transition: 1s;
+    }
+
+    .headerbutton:hover {
+        transform: scale(1.1);
+    }
+
+    .hero {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .herobox1 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .herobox1mini {
+        display: flex;
+        align-items: center;
+    }
+
+    .herobox1minitext {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .herobox1h {
+        font-size: 45px;
+        width: 300px;
+        margin: 0;
+    }
+
+    .herobox1miniimg {
+        width: 100px;
+        height: 80px;
+    }
+
+    .herobox1p {
+        font-size: 20px;
+        color: gray;
+        width: 370px;
+        line-height: 26px;
+    }
+
+    .herobox1button {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        width: 200px;
+        height: 70px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .herobox1button:hover {
+        transform: scale(1.1);
+        background-color: white;
+        color: black;
+        border: 2px solid;
+    }
+
+    .herobox2 {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .herobox2img {
+        width: 100%;
+    }
+
+    .big1 {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .big1h {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .big1box {
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .big1box1 {
+        width: 330px;
+        height: 650px;
+        background-color: rgba(128, 128, 128, 0.203);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px
+    }
+
+    .big1box1img {
+        width: 240px;
+    }
+
+    .big1box1text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 240px;
+    }
+
+    .big1box1h {
+        margin: 0;
+    }
+
+    .big1box1textp {
+        color: gray;
+    }
+
+    .big1box1textbutton {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .big1box1textbutton:hover {
+        transform: scale(1.1);
+    }
+
+    .big1boxmini {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big1boxminii {
+        display: flex;
+        gap: 20px;
+    }
+
+    .big1boxminii1 {
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.203);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big1boxminii1img {
+        width: 200px;
+        margin-left: 60px;
+    }
+
+    .big1boxminii1text {
+        width: 300px;
+        color: gray;
+
+    }
+
+    .big1boxmini1 {
+        width: 820px;
+        height: 230px;
+        background-color: rgba(128, 128, 128, 0.203);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .big1boxmini1text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big1boxmini1textp {
+        color: gray;
+        margin: 0;
+        width: 300px;
+    }
+
+    .big1boxmini1texth {
+        margin: 0;
+    }
+
+    .big1boxmini1img {
+        width: 270px;
+    }
+
+    .big2 {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .big2box1 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .big2box1h {
+        font-size: 45px;
+        margin: 0;
+    }
+
+    .big2box1p {
+        width: 600px;
+        color: gray;
+        font-size: 18px;
+        margin: 0;
+        line-height: 26px;
+    }
+
+    .big2box1box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .big2box1box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big2box1box1p1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .big2box1box1p2 {
+        color: gray;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .big2box2 {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .big2box2img {
+        width: 100%;
+        height: 330px;
+    }
+
+    .big3 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .big3h {
+        font-size: 45px;
+    }
+
+    .big3box {
+        width: 90%;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .big3box1 {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 450px;
+        align-items: center;
+    }
+
+    .big3box1img {
+        width: 250px;
+    }
+
+    .big3box1text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+    .big3box1texth {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .big3box1textp {
+        margin: 0;
+        font-size: 18px;
+        color: gray;
+        line-height: 26px;
+    }
+
+    .big3box1textminii {
+        width: 150px;
+        height: 40px;
+        background-color: rgba(128, 128, 128, 0.203);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .big3box1img2 {
+        width: 350px;
+    }
+
+    .big3box1textminiii {
+        width: 150px;
+        height: 40px;
+        background-color: rgba(128, 128, 128, 0.203);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        gap: 10px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .big3box1img3 {
+        width: 280px;
+    }
+
+    .big4 {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        gap: 20px;
+    }
+
+    .big4box1 {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .big4box1img {
+        width: 100%;
+    }
+
+    .big4box2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .big4box2h {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .big4box2p {
+        color: gray;
+        margin: 0;
+        width: 600px;
+    }
+
+    .big4box2mini {
+        display: flex;
+        gap: 20px;
+    }
+
+    .big4box2miniinput {
+        width: 300px;
+        height: 50px;
+        color: gray;
+    }
+
+    .big4box2minibutton {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        width: 200px;
+        height: 55px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .big4box2minibutton:hover {
+        transform: scale(1.1);
+        background-color: white;
+        border: 2px solid;
+        color: black;
+    }
+
+    .footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerbox {
+        border-top: 1px solid gray;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerboximg {
+        width: 150px;
+        height: 50px;
+    }
+
+    .footerboxp {
+        font-size: 20px;
+        color: gray;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+
+        <img class="headerimg" src="./img/ders1 header.png" alt="">
+
+        <ul class="headerul">
+
+
+            <li>
+                <a class="headera" href="">Home</a>
+            </li>
+
+            <li>
+                <a class="headera" href="">Skills</a>
+            </li>
+
+            <li>
+                <a class="headera" href="">About Us</a>
+            </li>
+
+            <li>
+                <a class="headera" href="">Pricing</a>
+            </li>
+
+            <li>
+                <a class="headera" href="">Contacts</a>
+            </li>
+
+
+        </ul>
+
+        <a class="headerbutton" href="">Let`s Talk</a>
+
+
+
+    </header>
+
+    <div class="hero">
+
+        <div class="herobox1">
+
+
+            <div class="herobox1mini">
+
+                <div class="herobox1minitext">
+                    <h1 class="herobox1h">Learn </h1>
+
+                    <h1 class="herobox1h"> Any Foreign </h1>
+
+                    <h1 class="herobox1h">Language</h1>
+
+
+
+
+                </div>
+
+                <img class="herobox1miniimg" src="./img/ders1 hero1.png" alt="">
+
+
+            </div>
+
+            <p class="herobox1p">With our teachers who write a program for each student, you will be able to make your
+                first sketch after the first lesson.</p>
+
+            <a class="herobox1button" href="">Get started</a>
+
+
+        </div>
+
+        <div class="herobox2">
+
+            <img class="herobox2img" src="./img/ders1 hero2.png" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="big1">
+
+        <h1 class="big1h">Skills</h1>
+
+        <div class="big1box">
+
+            <div class="big1box1">
+
+                <img class="big1box1img" src="./img/ders1 big1 img1.png" alt="">
+
+
+                <div class="big1box1text">
+
+                    <h1 class="big1box1h">Speaking</h1>
+
+                    <p class="big1box1textp">Improve your English skills and confidence.
+                        Live classes and interactive lessons online.
+                        20% extra free for a limited time only.</p>
+
+                    <p class="big1box1textp">Learn English online and improve your skills through our high-quality
+                        courses and resources – all designed for young language learners.</p>
+
+                    <a class="big1box1textbutton" href="">Learn more</a>
+
+                </div>
+
+
+            </div>
+
+            <div class="big1boxmini">
+
+                <div class="big1boxminii">
+
+                    <div class="big1boxminii1">
+
+                        <img class="big1boxminii1img" src="./img/ders1 big1 img2.png" alt="">
+
+
+                        <div class="big1box1text">
+
+                            <h1 class="big1box1h">Writing</h1>
+
+
+                            <p class="big1boxminii1text">One of the most important and extensive areas of natural
+                                science,
+                                the science that studies substances, also their composition</p>
+
+                            <a class="big1box1textbutton" href="">Learn more</a>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="big1boxminii1">
+
+                        <img class="big1boxminii1img" src="./img/ders1 big1 img3.png" alt="">
+
+
+                        <div class="big1box1text">
+
+                            <h1 class="big1box1h">Reading</h1>
+
+
+                            <p class="big1boxminii1text">perception and response actions of the user resulting from the
+                                use and/or upcoming use of the product, system or service</p>
+
+                            <a class="big1box1textbutton" href="">Learn more</a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="big1boxmini1">
+
+                    <div class="big1boxmini1text">
+
+                        <h1 class="big1boxmini1texth">Linsteng</h1>
+
+                        <p class="big1boxmini1textp">Here you can find activities to practise your listening skills.
+                            Listening will help you to improve your understanding.</p>
+
+                        <a class="big1box1textbutton" href="">Learn more</a>
+
+                    </div>
+
+                    <img class="big1boxmini1img" src="./img/ders1 big1 img4.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="big2">
+
+        <div class="big2box1">
+
+            <h1 class="big2box1h">About Us</h1>
+
+            <p class="big2box1p">The model offers a framework for discussing problems related to the user's experience,
+                as well as possible ways and means of solving them. Application development begins at the top level
+                (strategy), where the future software product is described quite abstractly from the point of view of
+                the expectations of both users and the customer.</p>
+
+            <div class="big2box1box">
+                <div class="big2box1box1">
+                    <p class="big2box1box1p1">800</p>
+
+                    <p class="big2box1box1p2">Pupils</p>
+
+                </div>
+
+                <div class="big2box1box1">
+                    <p class="big2box1box1p1">18</p>
+
+                    <p class="big2box1box1p2">Teachers</p>
+
+                </div>
+
+                <div class="big2box1box1">
+                    <p class="big2box1box1p1">6</p>
+
+                    <p class="big2box1box1p2">Foreign languages</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="big2box2">
+
+            <img class="big2box2img" src="./img/ders1 big2 img.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="big3">
+
+        <h1 class="big3h">Pricing</h1>
+
+        <div class="big3box">
+
+            <div class="big3box1">
+
+                <img class="big3box1img" src="./img/ders1 big3.png" alt="">
+
+                <div class="big3box1text">
+
+                    <h1 class="big3box1texth">Self-study online course</h1>
+
+                    <p class="big3box1textp">Start learning English online in live classes with qualified EC teachers
+                        and students from all over the world.</p>
+
+
+                    <div class="big3box1textminii">
+
+                        <p>£5.99</p>
+
+                        <p>per month</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="big3box1">
+
+                <img class="big3box1img2" src="./img/ders1 big3 img2.png" alt="">
+
+                <div class="big3box1text">
+
+                    <h1 class="big3box1texth">Live online classes</h1>
+
+                    <p class="big3box1textp">Interactive group classes with expert teachers. Free 7-day trial.</p>
+
+
+                    <div class="big3box1textminiii">
+
+                        <p>£12.99</p>
+
+                        <p>per month</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="big3box1">
+
+                <img class="big3box1img3" src="./img/ders1 big3 img3.png" alt="">
+
+                <div class="big3box1text">
+
+                    <h1 class="big3box1texth">Personal Tuition</h1>
+
+                    <p class="big3box1textp">Online one-to-one English tutoring – enjoy our first session for only $1
+                    </p>
+
+
+                    <div class="big3box1textminiii">
+
+                        <p>£20.99</p>
+
+                        <p>per month</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="big4">
+
+        <div class="big4box1">
+            <img class="big4box1img" src="./img/ders1 big4.png" alt="">
+        </div>
+
+        <div class="big4box2">
+
+            <h1 class="big4box2h">Contact Us</h1>
+
+            <p class="big4box2p">Discover your current English level by taking our free online English test. Sign up to
+                our newsletter for learning tips and free resources.</p>
+
+            <div class="big4box2mini">
+
+                <input class="big4box2miniinput" type="text" value="Enter Your E-mail">
+
+                <a class="big4box2minibutton" href="">Subscribe</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footerbox">
+
+            <img class="footerboximg" src="./img/ders1 header.png" alt="">
+
+            <p class="footerboxp">Terms and Conditions • Privacy Policy • Cookie Policy</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

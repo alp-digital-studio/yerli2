@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #F9F5EB;
+    }
+
+    .headerimg {
+        width: 200px;
+    }
+
+    .headerul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .headera {
+        font-size: 19px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .headerbutton {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background-color: blueviolet;
+        width: 170px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .headerbutton:hover {
+        transform: scale(1.1);
+        background-color: white;
+        color: blueviolet;
+        border: 2px solid blueviolet;
+    }
+
+    .hero {
+        width: 100%;
+        height: 80vh;
+        background-color: #F9F5EB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .herobox1 {
+        width: 45%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .herobox1mini {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        gap: 6px;
+        font-weight: bold;
+    }
+
+    .herobox1icon {
+        color: rgb(201, 201, 3);
+    }
+
+    .herobox1text {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .herobox1texth1 {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .herobox1textimg {
+        width: 100px;
+    }
+
+    .herobox1p {
+        font-size: 25px;
+        width: 600px;
+        line-height: 26px;
+        color: blueviolet;
+    }
+
+    .heroboxphone {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fa-phone-flip {
+        font-size: 45px;
+        color: white;
+        width: 70px;
+        height: 70px;
+        background-color: blueviolet;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroboxphonetext {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .heroboxphonetextp1 {
+        font-size: 25px;
+        color: gray;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .heroboxphonetextp2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .herobox2 {
+        width: 45%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .herobox2img {
+        width: 100%;
+        height: 95%;
+        border-radius: 20px;
+    }
+
+    .big1 {
+        width: 100%;
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .big1h {
+        font-size: 50px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .big1p {
+        margin: 0;
+        font-size: 20px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .big1box {
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 30px;
+
+    }
+
+    .big1box1 {
+        width: 540px;
+        height: 480px;
+        background-color: #F9F5EB;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .big1box1text {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .fa-bath {
+        font-size: 45px;
+        color: white;
+        width: 70px;
+        height: 70px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big1box1text1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .big1box1text1p1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .big1box1text1p2 {
+        font-size: 18px;
+        width: 380px;
+        margin: 0;
+        line-height: 27px;
+    }
+
+    .big1box1img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .fa-scissors {
+        font-size: 45px;
+        color: white;
+        width: 70px;
+        height: 70px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .fa-paw {
+        font-size: 45px;
+        color: white;
+        width: 70px;
+        height: 70px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .fa-tooth {
+        font-size: 45px;
+        color: white;
+        width: 70px;
+        height: 70px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big1button {
+        display: flex;
+        gap: 30px;
+    }
+
+    .big1button1 {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        width: 170px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .big1button1:hover {
+        transform: scale(1.1);
+    }
+
+    .big1button2 {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        width: 240px;
+        height: 50px;
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .big1button2:hover {
+        transform: scale(1.1);
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .big2 {
+        width: 100%;
+        height: 160vh;
+        background-color: #F9F5EB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .big2h1 {
+        font-size: 45px;
+        margin: 0;
+    }
+
+    .big2img {
+        width: 100px;
+    }
+
+    .big2h2 {
+        margin: 0;
+        font-size: 45px;
+        margin-left: 40px;
+    }
+
+    .big2p {
+        font-size: 20px;
+        width: 500px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .big2box1 {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .big2box1mini {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .fa-sun {
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        background-color: greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big2box1minip {
+        font-size: 25px;
+        font-weight: bold;
+        width: 180px;
+    }
+
+    .fa-shield-cat {
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        background-color: greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .fa-dog {
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        background-color: greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big2box2img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .big2button {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .big2button:hover {
+        transform: scale(1);
+    }
+
+    .big3 {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .big3box1 {
+        width: 40%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .big3box1img {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .big3box2 {
+        width: 50%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 30px;
+        border: 1px solid blueviolet;
+        border-radius: 20px;
+    }
+
+    .big3box2h {
+        font-size: 50px;
+        width: 400px;
+    }
+
+    .big3box2p {
+        font-size: 25px;
+        text-align: start;
+        width: 470px;
+        margin: 0;
+    }
+
+    .big3box2p2 {
+        font-size: 20px;
+        color: white;
+        background-color: blueviolet;
+        width: 70px;
+        height: 30px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .big4 {
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .big4h {
+        font-size: 50px;
+        width: 430px;
+        text-align: center;
+    }
+
+    .big4box {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .big4boximg {
+        width: 230px;
+        border-radius: 20px;
+    }
+
+    .big4boximg2 {
+        width: 230px;
+        height: 390px;
+        border-radius: 20px;
+    }
+
+    .big4boximg3 {
+        width: 230px;
+        height: 450px;
+        border-radius: 20px;
+    }
+
+    .big4boximg4 {
+        width: 230px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .big4boximg5 {
+        width: 230px;
+        border-radius: 20px;
+    }
+
+    .big4boximg6 {
+        width: 170px;
+        border-radius: 20px;
+    }
+
+    .big5 {
+        width: 100%;
+        height: 70vh;
+
+    }
+
+    .big5box {
+        width: 100%;
+        height: 60vh;
+        background-image: url("img2/ders2big5arxaplan.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .big5box1 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 50px;
+    }
+
+    .big5box1h {
+        font-size: 50px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .big5box1p {
+        font-size: 20px;
+        color: blueviolet;
+        width: 400px;
+    }
+
+    .big5box1p2 {
+        font-size: 25px;
+        color: white;
+        width: 90px;
+        height: 40px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .big5box2 {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .big5box21 {
+        width: 90%;
+        background-color: white;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        border-radius: 20px;
+        overflow: hidden;
+        transform: rotate(16deg);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .big5box21img {
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .big6 {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .big6box1 {
+        width: 90%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .big6box1h {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .big6box1img {
+        width: 150px;
+    }
+
+    .big6box1p {
+        font-size: 20px;
+        width: 500px;
+    }
+
+    .big6box2 {
+        width: 90%;
+        height: 70vh;
+        display: flex;
+        gap: 20px;
+    }
+
+    .big6box21 {
+        width: 50%;
+        height: 70vh;
+    }
+
+    .big6box21img {
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .big6box22 {
+        width: 50%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big6box22text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: 1px solid;
+        padding-bottom: 20px;
+    }
+
+    .big6box22text1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fa-chevron-right {
+        font-size: 30px;
+        color: white;
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big6box22text2 {
+        display: flex;
+        gap: 10px;
+    }
+
+    .fa-location-dot {
+        font-size: 30px;
+        color: white;
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big6box22text2p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .fa-mobile-screen {
+        font-size: 30px;
+        color: white;
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .fa-envelope {
+        font-size: 30px;
+        color: white;
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big6box22textt {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .big7 {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .big7h {
+        font-size: 45px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .big7box {
+        width: 90%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fa-chevron-left {
+        font-size: 30px;
+        color: white;
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .big7img {
+        width: 400px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .big7text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fa-quote-left {
+        font-size: 60px;
+        color: greenyellow;
+    }
+
+    .big7texth {
+        width: 400px;
+    }
+
+    .big7text1 {
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        align-items: center;
+    }
+
+    .big7text1p1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .big7text1p2 {
+        font-size: 25px;
+        color: gray;
+    }
+
+    .big8 {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .big8box1 {
+        width: 90%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .big8box1h {
+        font-size: 50px;
+    }
+
+    .big8box1button {
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        width: 250px;
+        height: 50px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .big8box1button:hover {
+        transform: scale(1.1);
+    }
+
+    .big8box2 {
+        width: 90%;
+        height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .big8box2box {
+        width: 350px;
+        height: 400px;
+        border: 1px solid;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .big8box2boximg {
+        width: 100%;
+        height: 50%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .big8box2boxtext {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .big8box2boxtext1 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .big8box2boxtext1p1 {
+        font-size: 20px;
+        font-weight: bold;
+        width: 50px;
+        height: 30px;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .big8box2boxtext1p2 {
+        font-size: 20px;
+        color: gray;
+    }
+
+    .big8box2boxtexth {
+        margin: 0;
+    }
+
+    .big8box2boxtexta {
+        text-decoration: none;
+        font-size: 20px;
+        gap: 10px;
+        color: gray;
+    }
+
+    .big8box2boxtext1p12 {
+        font-size: 20px;
+        font-weight: bold;
+        width: 80px;
+        height: 30px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .big8box2boxtext1p13 {
+        font-size: 20px;
+        font-weight: bold;
+        width: 80px;
+        height: 30px;
+        background-color: greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+
+        <img class="headerimg" src="img2/ders2 logo.png" alt="">
+
+        <ul class="headerul">
+
+            <li>
+                <a class="headera" href="">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a class="headera" href="">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a class="headera" href="">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a class="headera" href="">
+                    Pages
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+
+            <li>
+                <a class="headera" href="">
+                    Card(3)
+                </a>
+            </li>
+
+            <a class="headerbutton" href="">Get in touch</a>
+
+        </ul>
+
+
+    </header>
+
+
+    <div class="hero">
+
+        <div class="herobox1">
+
+            <div class="herobox1mini">
+
+                <div class="herobox1icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>4.9reviews from testimonials</p>
+
+            </div>
+
+            <div class="herobox1text">
+
+                <h1 class="herobox1texth1">Pet grooming
+                    <img class="herobox1textimg" src="img2/ders2 hero2.png" alt="">
+                </h1>
+
+                <h1 class="herobox1texth1">
+                    services in
+                </h1>
+
+                <h1 class="herobox1texth1">
+                    New York
+                </h1>
+
+
+            </div>
+
+            <p class="herobox1p">
+                Sit id ac elit quis condimentum morbi proin massa nulla urna vel at vel adipiscing sed varius elit
+                libero suspendisse nam curabitur nulla habitant.
+            </p>
+
+            <div class="heroboxphone">
+
+                <i class="fa-solid fa-phone-flip"></i>
+
+                <div class="heroboxphonetext">
+
+                    <p class="heroboxphonetextp1">Call us</p>
+
+                    <p class="heroboxphonetextp2"> (315) 512-2460 </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="herobox2">
+            <img class="herobox2img" src="./img2/ders2 hero.png" alt="">
+        </div>
+
+
+    </div>
+
+    <div class="big1">
+
+        <h1 class="big1h">We offer a wide range of services</h1>
+
+        <p class="big1p">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna</p>
+
+
+        <div class="big1box">
+
+            <div class="big1box1">
+
+                <div class="big1box1text">
+
+                    <i class="fa-solid fa-bath"></i>
+
+                    <div class="big1box1text1">
+
+                        <p class="big1box1text1p1">Bathing and drying</p>
+
+                        <p class="big1box1text1p2">Tortor ultricies nullam auctor ut a nunc lacus tempor tellus
+                            elementum dui morbi hendrerit.</p>
+
+                    </div>
+
+
+
+                </div>
+
+                <img class="big1box1img" src="img2/ders2 big1img1.png" alt="">
+
+            </div>
+
+            <div class="big1box1">
+
+                <div class="big1box1text">
+
+                    <i class="fa-solid fa-scissors"></i>
+
+                    <div class="big1box1text1">
+
+                        <p class="big1box1text1p1">Haircut and styling</p>
+
+                        <p class="big1box1text1p2">Ut at egestas quis sagittis ultrices tempor risus eget mattis
+                            ultricies pellentesque nisi iaculis.</p>
+
+                    </div>
+
+
+
+                </div>
+
+                <img class="big1box1img" src="img2/ders2 big1img2.png" alt="">
+
+            </div>
+
+            <div class="big1box1">
+
+                <div class="big1box1text">
+
+                    <i class="fa-solid fa-paw"></i>
+
+                    <div class="big1box1text1">
+
+                        <p class="big1box1text1p1">Nail trimming</p>
+
+                        <p class="big1box1text1p2">Sit id ac elit quis condimentum morbi proinolm massa nulla urna vel
+                            at vel consectetur.</p>
+
+                    </div>
+
+
+
+                </div>
+
+                <img class="big1box1img" src="img2/ders2 big1img3.png" alt="">
+
+            </div>
+
+
+            <div class="big1box1">
+
+                <div class="big1box1text">
+
+                    <i class="fa-solid fa-tooth"></i>
+
+                    <div class="big1box1text1">
+
+                        <p class="big1box1text1p1">Teeth brushing</p>
+
+                        <p class="big1box1text1p2">Luctus ligula neque pulvinar dolor proin labore ultricies facilisi
+                            sit donec diam ut aliquam.</p>
+
+                    </div>
+
+
+
+                </div>
+
+                <img class="big1box1img" src="img2/ders2 big1img4.png" alt="">
+
+            </div>
+
+
+        </div>
+
+        <div class="big1button">
+
+            <a class="big1button1" href="">Get in touch</a>
+
+            <a class="big1button2" href="">Browse all services</a>
+
+
+        </div>
+
+    </div>
+
+    <div class="big2">
+
+        <h1 class="big2h1">
+            <img class="big2img" src="img2/ders2 big2img2.png" alt="">
+
+            Why you should
+        </h1>
+
+        <h1 class="big2h2">choose our services?</h1>
+
+        <p class="big2p">Sit id ac elit quis condimentum morbi proin massa nulla urna vel at vel adipiscing sed varius
+            elit libero.</p>
+
+
+        <div class="big2box1">
+
+            <div class="big2box1mini">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <p class="big2box1minip">Experienced groomers</p>
+
+            </div>
+
+            <div class="big2box1mini">
+
+                <i class="fa-solid fa-sun"></i>
+                <p class="big2box1minip">Stress-free environment</p>
+
+            </div>
+
+            <div class="big2box1mini">
+
+                <i class="fa-solid fa-shield-cat"></i>
+
+                <p class="big2box1minip">High-quality products</p>
+
+            </div>
+
+            <div class="big2box1mini">
+
+                <i class="fa-solid fa-dog"></i>
+
+                <p class="big2box1minip">Personalized pet-care</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="big2box2">
+            <img class="big2box2img" src="./img2/ders2 big2img.png" alt="">
+        </div>
+
+        <a class="big2button" href="">Get in touch</a>
+
+    </div>
+
+    <div class="big3">
+
+        <div class="big3box1">
+            <img class="big3box1img" src="img2/ders2 big3img3.png" alt="">
+        </div>
+
+        <div class="big3box2">
+
+            <h1 class="big3box2h">Why choose us for your pet?</h1>
+
+            <p class="big3box2p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+
+            <p class="big3box2p2">.....</p>
+
+        </div>
+
+    </div>
+
+    <div class="big4">
+
+        <h1 class="big4h">Happy pets,stunning styles</h1>
+
+        <div class="big4box">
+
+            <img class="big4boximg" src="./img2/ders2big4img1.png" alt="">
+
+            <img class="big4boximg2" src="./img2/ders2big4img2.png" alt="">
+
+            <img class="big4boximg3" src="./img2/ders2big4img3.png" alt="">
+
+            <img class="big4boximg4" src="./img2/ders2big4img4.png" alt="">
+
+            <img class="big4boximg5" src="./img2/ders2big4img5.png" alt="">
+
+            <img class="big4boximg6" src="./img2/ders2big4img6.png" alt="">
+
+        </div>
+
+
+    </div>
+
+    <div class="big5">
+
+        <div class="big5box">
+
+            <div class="big5box1">
+
+                <h1 class="big5box1h">Transform your pet's look today!</h1>
+
+                <p class="big5box1p">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis
+                    sit aliquam sit nullam.</p>
+
+                <p class="big5box1p2">...</p>
+
+            </div>
+
+            <div class="big5box2">
+
+                <div class="big5box21">
+                    <img class="big5box21img" src="./img2/ders2big5img.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="big6">
+
+
+        <div class="big6box1">
+
+            <h1 class="big6box1h">
+                Visit our pet salon
+                <img class="big6box1img" src="img2/ders2 hero2.png" alt="">
+            </h1>
+
+            <p class="big6box1p">
+                Sit id ac elit quis condimentum morbi proin massa nulla urna vel at Vel adipiscing sed varius elit
+                libero.
+            </p>
+
+        </div>
+
+        <div class="big6box2">
+
+            <div class="big6box21">
+                <img class="big6box21img" src="img2/ders2 big6.png" alt="">
+            </div>
+
+            <div class="big6box22">
+
+                <div class="big6box22text">
+
+
+                    <div class="big6box22text1">
+                        <h1>San Rrancisco,CA
+                        </h1>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div class="big6box22text2">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p class="big6box22text2p">Chattanooga St,San Francisco, Ca 94114,EE.UU.</p>
+
+                    </div>
+
+                    <div class="big6box22text2">
+                        <i class="fa-solid fa-mobile-screen"></i>
+
+                        <p class="big6box22text2p">(xxx)xxx-xxxx</p>
+
+                    </div>
+
+                    <div class="big6box22text2">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <p class="big6box22text2p">Sanfrancisco@pawcare.com</p>
+
+                    </div>
+
+                </div>
+
+                <div class="big6box22textt">
+
+                    <h1>Los Angeles,CA</h1>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="big7">
+
+        <h1 class="big7h">What pet owners say about us</h1>
+
+        <div class="big7box">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+            <img class="big7img" src="img2/ders2big7img.png" alt="">
+
+            <div class="big7text">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <h1 class="big7texth">Wonderful service, so kind and patient with my shy pup.</h1>
+
+                <div class="big7text1">
+
+                    <p class="big7text1p1">John Carter</p>
+
+                    <p class="big7text1p2">San Francisgo,CA</p>
+
+                </div>
+
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </div>
+
+
+    </div>
+
+    <div class="big8">
+
+        <div class="big8box1">
+
+            <h1 class="big8box1h">Latest articles</h1>
+
+            <a class="big8box1button" href="">Browse all articles</a>
+
+        </div>
+
+        <div class="big8box2">
+
+            <div class="big8box2box">
+
+                <img class="big8box2boximg" src="img2/ders2big8img1.png" alt="">
+
+                <div class="big8box2boxtext">
+
+                    <div class="big8box2boxtext1">
+                        <p class="big8box2boxtext1p1">Tips</p>
+                        <p class="big8box2boxtext1p2">Sep28,2026</p>
+
+                    </div>
+
+                    <h3 class="big8box2boxtexth">The ultimade guide to bathing you dog at home</h3>
+
+                    <a class="big8box2boxtexta" href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="big8box2box">
+
+                <img class="big8box2boximg" src="img2/ders2big8img2.png" alt="">
+
+                <div class="big8box2boxtext">
+
+                    <div class="big8box2boxtext1">
+                        <p class="big8box2boxtext1p12">Health</p>
+                        <p class="big8box2boxtext1p2">Sep 25,2026</p>
+
+                    </div>
+
+                    <h3 class="big8box2boxtexth">What are you favorite nutrients in your pet's food?</h3>
+
+                    <a class="big8box2boxtexta" href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="big8box2box">
+
+                <img class="big8box2boximg" src="img2/ders2big8img3.png" alt="">
+
+                <div class="big8box2boxtext">
+
+                    <div class="big8box2boxtext1">
+                        <p class="big8box2boxtext1p13">Care</p>
+                        <p class="big8box2boxtext1p2">Sep 21.2026</p>
+
+                    </div>
+
+                    <h3 class="big8box2boxtexth">Creating a calm grooming environment for anxiours pets</h3>
+
+                    <a class="big8box2boxtexta" href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
