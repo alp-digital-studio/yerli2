@@ -147,3 +147,107 @@
 // }
 
 // module.exports = { atm };
+
+
+// ------------------------------------------------
+// Gənclər evində işlədiklərimiz
+// ---------------------------------------------------
+
+// task1
+
+// const students = [
+
+//     { name: "Ali,score:85" },
+//     { name: "Leyla", score: 42 },
+//     { name: "Murad", score: 96 },
+//     { name: "Aysel", score: 73 },
+//     { name: "Nihad", score: 34 }
+
+// ];
+// function analyzeStudents(students) {
+//     let kecenler = [];
+//     let kesilenler = [];
+//     let cem = 0;
+
+//     for (let student of students) {
+
+//         let { name,score } = students
+//         cem+=score;
+
+//         if (kecenler > 50) {
+//             passed.push(name)
+//         }
+//         else if (kesilenler < 50) {
+//         failed.push(name)
+            
+//         }
+
+//         let avarageScore=cem/students.length;
+
+//         return {
+//             passed:passed,
+//             failed:failed,
+//             avarageScore:avarageScore,
+//         }
+//     }
+
+// }
+
+//         console.log(analyzeStudents(students))
+
+// ------------------------------------------------------------------------------
+
+// task 2
+
+// const cart = [
+//     { name: "Keyboard", price: 80, quantity: 2 },
+//     { name: "Mouse", price: 35, quantity: 1 },
+//     { name: "Monitor", price: 450, quantity: 0 },
+//     { name: "USB Cable", price: 15, quantity: 3 }
+// ];
+
+// const calculateDiscount = (total) => {
+
+//     if (total >= 200) {
+//         return total * 0.15;
+//     }
+//     else {
+//         return 0;
+//     }
+
+// };
+
+// function processCart(cart) {
+
+//     let products = cart.filter(product => product.quantity > 0);
+
+//     let newProducts = products.map(product => {
+
+//         let { name, price, quantity } = product;
+
+//         return {
+//             name: name,
+//             totalPrice: price * quantity
+//         };
+
+//     });
+
+//     let subtotal = newProducts.reduce((sum, product) => {
+//         return sum + product.totalPrice;
+//     }, 0);
+
+//     let discount = calculateDiscount(subtotal);
+
+//     let finalTotal = subtotal - discount;
+
+//     return {
+//         items: newProducts,
+//         subtotal: subtotal,
+//         discount: discount,
+//         finalTotal: finalTotal,
+//         ...{ currency: "AZN" }
+//     };
+
+// }
+
+// console.log(processCart(cart));
