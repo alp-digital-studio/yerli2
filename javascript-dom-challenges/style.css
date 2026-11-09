@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#colorBox {
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
